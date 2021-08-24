@@ -26,30 +26,29 @@ def menu():
     print("4.Divide")
     print("5.Modulo")
     print("6.exponent")
-    menu()    
-    choice = input("Enter choice(1/2/3/4/5/6):")  
+menu()    
+choice = input("Enter choice(1/2/3/4/5/6):")  
       
-    num1 = int(input("Enter first number: "))  
-    num2 = int(input("Enter second number: "))  
+num1 = int(input("Enter first number: "))  
+num2 = int(input("Enter second number: "))  
       
-    if choice == '1':  
-       print(num1,"+",num2,"=", add(num1,num2))  
+if choice == '1':
+   print(num1,"+",num2,"=", add(num1,num2))  
       
-    elif choice == '2':  
-       print(num1,"-",num2,"=", subtract(num1,num2))  
-      
-    elif choice == '3':  
-       print(num1,"*",num2,"=", multiply(num1,num2))
-       
-    elif choice == '4':  
-       print(num1,"/",num2,"=", divide(num1,num2))
+elif choice == '2':  
+   print(num1,"-",num2,"=", subtract(num1,num2))  
 
-    elif choice == '5':  
-       print(num1,"%",num2,"=", modulo(num1,num2))
-       
-    elif choice == '6':  
-       print(num1,"^",num2,"=", exponent(num1,num2)) 
-    else:
-        print("Invalid input, Enter a valid operator")
-menu()   
-#choice=(input("Choose your operator 1/2/3/4/5/6: "))
+elif choice == '3':  
+   print(num1,"*",num2,"=", multiply(num1,num2))
+
+elif choice == '4':  
+   print(num1,"/",num2,"=", divide(num1,num2))
+
+elif choice == '5': 
+   print(num1,"%",num2,"=", modulo(num1,num2))
+
+elif choice == '6':  
+   print(num1,"^",num2,"=", exponent(num1,num2)) 
+else:
+   print("Invalid input, Enter a valid operator")
+   menu()   
